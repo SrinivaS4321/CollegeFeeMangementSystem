@@ -1,9 +1,11 @@
 OUTPUTS OF COLLEGE FEE MANGEMENT SYSTEM
 
 Index:
+
 Indexoutputlink: https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/index/index.png
 
 Adding elements output link:
+
 Adding input:
 https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/add/addinput.png
 
@@ -23,6 +25,7 @@ https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/displ
 
 
 Update elements output link:
+
 Update input:
 https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/update/updateinput.png
 
