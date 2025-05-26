@@ -54,17 +54,53 @@
 </head>
 <body>
     <h2>Add Fee Payment</h2>
-    <form method="post" action="AddFeePaymentServlet">
-        Student ID: <input type="text" name="studentID" /><br>
-        Student Name: <input type="text" name="studentName" /><br>
-        Payment Date: <input type="date" name="paymentDate" /><br>
-        Amount: <input type="text" name="amount" /><br>
-        Status: 
-        <select name="status">
-            <option value="Paid">Paid</option>
-            <option value="Overdue">Overdue</option>
-        </select><br>
-        <input type="submit" value="Add Payment" />
-    </form>
-</body>
+<form method="post" action="AddFeePaymentServlet" onsubmit="return validateForm()">
+    Student ID: 
+    <input type="text" name="studentID" pattern="\d+" title="Only numbers allowed" required /><br>
+
+    Student Name: 
+    <input type="text" name="studentName" pattern="[A-Za-z ]+" title="Only letters allowed" required /><br>
+
+    Payment Date: 
+    <input type="date" name="paymentDate" required /><br>
+
+    Amount: 
+    <input type="text" name="amount" pattern="\d+(\.\d{1,2})?" title="Enter a valid amount" required /><br>
+
+    Status: 
+    <select name="status">
+        <option value="Paid">Paid</option>
+        <option value="Overdue">Overdue</option>
+    </select><br>
+
+    <input type="submit" value="Add Payment" />
+</form>
+
+
+<script>
+function validateForm() {
+    const studentID = document.forms[0]["studentID"].value;
+    const studentName = document.forms[0]["studentName"].value;
+    const amount = document.forms[0]["amount"].value;
+
+    const idRegex = /^\d+$/;
+    const nameRegex = /^[A-Za-z ]+$/;
+    const amountRegex = /^\d+(\.\d{1,2})?$/;
+
+    if (!idRegex.test(studentID)) {
+        alert("Student ID must be numeric.");
+        return false;
+    }
+    if (!nameRegex.test(studentName)) {
+        alert("Student Name must contain only letters.");
+        return false;
+    }
+    if (!amountRegex.test(amount)) {
+        alert("Amount must be a valid number.");
+        return false;
+    }
+    return true;
+}
+</script>
+   
 </html>
