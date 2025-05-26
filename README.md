@@ -1,47 +1,27 @@
-OUTPUTS OF COLLEGE FEE MANGEMENT SYSTEM
-
-Index:
-
-Indexoutputlink: https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/index/index.png
-
-Adding elements output link:
-
-Adding input:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/add/addinput.png
-
-After Adding:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/add/Afteradding.png
-
-Deleting elements output link:
-
-Delete input:
-http://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/delete/deleteinput.png
-
-After Deleteing:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/delete/deleteoutput.png
-
-Display output link:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/display/display.png
+           COLLEGE FEE MANGEMENT SYSTEM
 
 
-Update elements output link:
+STEP 1:FIRST YOU CREATE A DATABASE IN SQL CALLED AS collegefeedb.
+	After that you import the MySQL code in data base.
+here link:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/mysqlcommand.sql
 
-Update input:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/update/updateinput.png
+STEP 2:AFTER CREATING THE DATABASE AND TABLE.IMPORT THE DATA AND ATTACH TO THE ECLISPE
 
-After Update:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/update/updateoutput.png
+1.create a DYNAMIC WEB PROJECT and give name what you want
+2.After the got to this website download MySQL connector
+here link:https://dev.mysql.com/downloads/connector/j/
+3.After download it attach to src/webapp/web-inf/lib
+4.After attach right click in src create new package called com
+5.inside com again you create 4 package called as com.util , com.model, com.dao,com.servelt
+6.in com.util package attach this file:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/util/DatabaseConnection.java
+7.in com.model package attach this file:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/model/FeePayment.java
+8.in com.dao package attach this file:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/dao/FeePaymentDAO.java
+9.in com.servlet package attach these file:
+a.AddFeePaymentServlet.java:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/servlet/AddFeePaymentServlet.java
+b. UpdateFeePaymentServlet.java:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/servlet/UpdateFeePaymentServlet.java
+c.DeleteFeePaymentServlet.java:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/servlet/DeleteFeePaymentServlet.java
+d. DisplayFeePaymentsServlet.java:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/servlet/DisplayFeePaymentsServlet.java
+e. ReportServlet.java:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/servlet/ReportServlet.java
+f.reportcretiraservlet:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/com/servlet/ReportCriteriaServlet.java
+10.After attaching right click in webadd attach this folder:https://github.com/SrinivaS4321/CollegeFeeMangementSystem/tree/main/webapp
 
-Report output link:
-
-Report input:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/report/reportimput.png
-
-Report overdue link:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/report/reportin_overdue.png
-
-Report paid output link:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/report/report_paid.png
-
-TotalCollection:
-https://github.com/SrinivaS4321/CollegeFeeMangementSystem/blob/main/output/report/totalcollection.png
